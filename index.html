@@ -1,0 +1,527 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Pawan Grover | MERN Full Stack Web Developer</title>
+<meta name="description" content="Pawan Grover — MERN Full Stack Web Developer. React.js, Node.js, Express.js, MongoDB and AI integration. View projects and get in touch." />
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Space+Grotesk:wght@500;600;700&display=swap" rel="stylesheet" />
+<link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+<!-- ================= HEADER ================= -->
+<header id="header">
+  <div class="container nav">
+    <a href="#home" class="logo" aria-label="Pawan Grover home">
+      <span class="br">&lt;</span>Pawan<span class="dot">/</span><span class="br">&gt;</span>
+    </a>
+
+    <nav>
+      <ul class="nav-links" id="navLinks">
+        <li><a href="#home" class="active">Home</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#education">Education</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+
+    <!-- Hire Me opens the popup form -->
+    <button class="nav-cta" data-open-modal type="button">Hire Me</button>
+
+    <button class="burger" id="burger" aria-label="Toggle navigation" aria-expanded="false">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+</header>
+
+<!-- ================= HERO ================= -->
+<section class="hero" id="home">
+  <div class="container hero-grid">
+    <div class="hero-copy">
+      <div class="badge"><span class="pulse"></span> Available for opportunities</div>
+
+      <h1>Hi, I'm <span class="grad-text">Pawan Grover</span></h1>
+
+      <div class="typed-wrap">
+        <span class="typed-prefix">I build&nbsp;</span>
+        <span id="typed"></span><span class="caret"></span>
+      </div>
+
+      <p class="lead">
+        Motivated MERN Full Stack fresher with hands-on training in MongoDB, Express.js,
+        React and Node.js. I build responsive web applications, REST APIs and basic AI
+        integrations — and I'm eager to contribute to real-world projects.
+      </p>
+
+      <div class="hero-actions">
+        <a href="#projects" class="btn btn-primary">
+          View My Work
+          <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
+        </a>
+        <button class="btn btn-ghost" data-open-modal type="button">
+          <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/></svg>
+          Hire Me
+        </button>
+      </div>
+
+      <div class="hero-contact">
+        <a href="tel:+918595256390">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.9v3a2 2 0 0 1-2.2 2 19.8 19.8 0 0 1-8.6-3.1 19.5 19.5 0 0 1-6-6A19.8 19.8 0 0 1 2.1 4.2 2 2 0 0 1 4.1 2h3a2 2 0 0 1 2 1.7c.1 1 .4 1.9.7 2.8a2 2 0 0 1-.5 2.1L8.1 9.9a16 16 0 0 0 6 6l1.3-1.2a2 2 0 0 1 2.1-.5c.9.3 1.8.6 2.8.7a2 2 0 0 1 1.7 2Z"/></svg>
+          +91 85952 56390
+        </a>
+        <a href="https://github.com/pawangrover100" target="_blank" rel="noopener">
+          <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 .5a12 12 0 0 0-3.8 23.4c.6.1.8-.3.8-.6v-2c-3.3.7-4-1.6-4-1.6-.6-1.4-1.4-1.8-1.4-1.8-1.1-.7.1-.7.1-.7 1.2.1 1.9 1.2 1.9 1.2 1.1 1.9 2.9 1.3 3.6 1 .1-.8.4-1.3.8-1.6-2.7-.3-5.5-1.3-5.5-5.9 0-1.3.5-2.4 1.2-3.2-.1-.3-.5-1.5.1-3.2 0 0 1-.3 3.3 1.2a11.5 11.5 0 0 1 6 0c2.3-1.5 3.3-1.2 3.3-1.2.6 1.7.2 2.9.1 3.2.8.8 1.2 1.9 1.2 3.2 0 4.6-2.8 5.6-5.5 5.9.4.4.8 1.1.8 2.2v3.3c0 .3.2.7.8.6A12 12 0 0 0 12 .5Z"/></svg>
+          github.com/pawangrover100
+        </a>
+      </div>
+    </div>
+
+    <div class="hero-visual">
+      <div class="avatar-ring">
+        <div class="avatar-inner"><span>PG</span></div>
+      </div>
+      <div class="chip chip-1"><i></i> React.js</div>
+      <div class="chip chip-2"><i></i> Node.js</div>
+      <div class="chip chip-3"><i></i> MongoDB</div>
+      <div class="chip chip-4"><i></i> AI Integration</div>
+    </div>
+  </div>
+
+  <div class="scroll-hint"><div class="mouse"></div> Scroll</div>
+</section>
+
+<!-- ================= STATS ================= -->
+<section style="padding-top:0;padding-bottom:60px">
+  <div class="container">
+    <div class="stats reveal">
+      <div class="stat"><b class="grad-text">MERN</b><span>Full Stack</span></div>
+      <div class="stat"><b class="grad-text">2+</b><span>Live Projects</span></div>
+      <div class="stat"><b class="grad-text">ADCA</b><span>Diploma Holder</span></div>
+      <div class="stat"><b class="grad-text">AI</b><span>Integration</span></div>
+    </div>
+  </div>
+</section>
+
+<!-- ================= ABOUT ================= -->
+<section id="about">
+  <div class="container">
+    <div class="sec-head reveal">
+      <div class="sec-label">About Me</div>
+      <h2>Turning ideas into <span class="grad-text">responsive web apps</span></h2>
+    </div>
+
+    <div class="about-grid">
+      <div class="about-text reveal">
+        <p>
+          I'm <strong>Pawan Grover</strong>, a MERN Full Stack developer based in Delhi, India.
+          I completed hands-on training at <strong>Ducat India</strong> in MongoDB, Express.js,
+          React.js and Node.js, where I built full-stack applications from scratch — designing
+          responsive UIs, writing REST APIs and modelling databases.
+        </p>
+        <p>
+          Alongside the core MERN stack, I have working knowledge of <strong>AI integration</strong> —
+          connecting apps to AI APIs, basic ML concepts and automation. I also use AI-assisted
+          development tools to write, debug and optimise code faster.
+        </p>
+        <p>
+          I care about clean, accessible, mobile-first interfaces and I'm always looking for
+          opportunities to learn and contribute to real-world projects.
+        </p>
+        <button class="btn btn-primary" data-open-modal type="button" style="margin-top:8px">
+          Let's Work Together
+          <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
+        </button>
+      </div>
+
+      <aside class="info-card reveal">
+        <h3>Quick Info</h3>
+        <div class="info-row"><span>Name</span><b>Pawan Grover</b></div>
+        <div class="info-row"><span>Role</span><b>Web Developer</b></div>
+        <div class="info-row"><span>Phone</span><b>+91 85952 56390</b></div>
+        <div class="info-row"><span>Email</span><b>pawangrover904@gmail.com</b></div>
+        <div class="info-row"><span>Location</span><b>H.No 174, Tatesar, Delhi – 110081</b></div>
+        <div class="info-row"><span>Focus</span><b>MERN + AI</b></div>
+        <div class="info-row"><span>Status</span><b style="color:#2ee6a8">Open to work</b></div>
+      </aside>
+    </div>
+  </div>
+</section>
+
+<!-- ================= SKILLS ================= -->
+<section id="skills">
+  <div class="container">
+    <div class="sec-head reveal">
+      <div class="sec-label">Skills</div>
+      <h2>My <span class="grad-text">tech stack</span></h2>
+      <p>The tools and technologies I use to design, build and ship web applications.</p>
+    </div>
+
+    <div class="skills-grid">
+      <article class="skill-card reveal">
+        <div class="skill-icon">🎨</div>
+        <h3>Frontend</h3>
+        <p>Building responsive, pixel-friendly interfaces with modern JavaScript.</p>
+        <div class="pills">
+          <span class="pill">HTML5</span>
+          <span class="pill">CSS3</span>
+          <span class="pill">JavaScript (ES6+)</span>
+          <span class="pill">React.js</span>
+          <span class="pill">Material UI</span>
+          <span class="pill">Tailwind CSS</span>
+          <span class="pill">Responsive Web Design</span>
+        </div>
+      </article>
+
+      <article class="skill-card reveal">
+        <div class="skill-icon">⚙️</div>
+        <h3>Backend</h3>
+        <p>Creating REST APIs, data models and secure authentication flows.</p>
+        <div class="pills">
+          <span class="pill">Node.js</span>
+          <span class="pill">Express.js</span>
+          <span class="pill">MongoDB</span>
+          <span class="pill">REST APIs</span>
+          <span class="pill">Authentication</span>
+        </div>
+      </article>
+
+      <article class="skill-card reveal">
+        <div class="skill-icon">🤖</div>
+        <h3>AI &amp; Tools</h3>
+        <p>Integrating AI features and shipping reliable, tested code.</p>
+        <div class="pills">
+          <span class="pill">Basic AI Integration</span>
+          <span class="pill">Claude AI</span>
+          <span class="pill">Debugging</span>
+          <span class="pill">Testing</span>
+          <span class="pill">Postman</span>
+          <span class="pill">Git &amp; GitHub</span>
+          <span class="pill">Deployment</span>
+        </div>
+      </article>
+    </div>
+  </div>
+</section>
+
+<!-- ================= EDUCATION ================= -->
+<section id="education">
+  <div class="container">
+    <div class="sec-head reveal">
+      <div class="sec-label">Education &amp; Training</div>
+      <h2>My learning <span class="grad-text">journey</span></h2>
+    </div>
+
+    <div class="about-grid">
+      <div class="timeline reveal">
+        <div class="tl-item">
+          <div class="tl-card">
+            <div class="tl-top">
+              <h3>Advance Diploma in Computer Applications (ADCA)</h3>
+              <span class="tl-year">2024 – 2025</span>
+            </div>
+            <div class="org">Sarva Educational &amp; Development (India)</div>
+            <p>Advanced computer applications covering programming fundamentals, databases, web technologies and productivity tools.</p>
+          </div>
+        </div>
+
+        <div class="tl-item">
+          <div class="tl-card">
+            <div class="tl-top">
+              <h3>Diploma in Computer Hardware &amp; Network Management</h3>
+              <span class="tl-year">2020 – 2021</span>
+            </div>
+            <div class="org">ITI Pusa, Delhi</div>
+            <p>Hardware assembly, troubleshooting, networking fundamentals and system maintenance.</p>
+          </div>
+        </div>
+
+        <div class="tl-item">
+          <div class="tl-card">
+            <div class="tl-top">
+              <h3>Senior Secondary — Humanities</h3>
+              <span class="tl-year">2020</span>
+            </div>
+            <div class="org">Siddhartha Public School</div>
+            <p>Completed senior secondary education with a Humanities stream.</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="reveal" style="display:flex;flex-direction:column;gap:22px">
+        <article class="info-card">
+          <h3>Training — Ducat India</h3>
+          <p style="color:var(--p2);font-size:.86rem;font-weight:500;margin-bottom:14px">MERN Full Stack + AI</p>
+          <ul style="display:flex;flex-direction:column;gap:11px;font-size:.88rem;color:var(--muted)">
+            <li>▸ Trained in MongoDB, Express.js, React.js and Node.js for full-stack web development.</li>
+            <li>▸ Built responsive UI, REST APIs and database models.</li>
+            <li>▸ Integrated AI features using APIs, basic ML concepts and automation.</li>
+            <li>▸ Worked on authentication, deployment and project optimisation.</li>
+          </ul>
+        </article>
+
+        <article class="info-card">
+          <h3>Certificates</h3>
+          <div class="pills" style="margin-top:4px">
+            <span class="pill">MERN Stack + AI — Ducat School of AI</span>
+            <span class="pill">Web Development with Claude AI</span>
+          </div>
+          <p style="color:var(--muted);font-size:.85rem;margin-top:16px">
+            Learned AI-assisted web development with Claude AI — building responsive websites
+            using HTML, CSS, JavaScript and MERN, and generating, debugging and optimising
+            code faster on real-world projects.
+          </p>
+        </article>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ================= PROJECTS ================= -->
+<section id="projects">
+  <div class="container">
+    <div class="sec-head reveal">
+      <div class="sec-label">Projects</div>
+      <h2>Things I've <span class="grad-text">built</span></h2>
+      <p>Live projects you can open and explore right now.</p>
+    </div>
+
+    <div class="projects-grid">
+
+      <article class="project reveal">
+        <div class="project-thumb">
+          <span class="tag-float">Live</span>
+          <span class="emoji">👟</span>
+        </div>
+        <div class="project-body">
+          <h3>Shoes Website</h3>
+          <p>
+            A modern, fully responsive shoe e-commerce front-end featuring a clean product
+            showcase, hero banners, category sections and mobile-first layouts with smooth
+            hover interactions and a polished UI.
+          </p>
+          <div class="project-tags">
+            <span>HTML5</span>
+            <span>CSS3</span>
+            <span>JavaScript</span>
+            <span>Responsive Design</span>
+          </div>
+          <div class="project-links">
+            <a class="plink plink-live" href="https://pawangrover100.github.io/Shoes-Website-/" target="_blank" rel="noopener">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><path d="M15 3h6v6"/><path d="M10 14 21 3"/></svg>
+              Live Demo
+            </a>
+            <a class="plink plink-code" href="https://github.com/pawangrover100" target="_blank" rel="noopener">
+              <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 .5a12 12 0 0 0-3.8 23.4c.6.1.8-.3.8-.6v-2c-3.3.7-4-1.6-4-1.6-.6-1.4-1.4-1.8-1.4-1.8-1.1-.7.1-.7.1-.7 1.2.1 1.9 1.2 1.9 1.2 1.1 1.9 2.9 1.3 3.6 1 .1-.8.4-1.3.8-1.6-2.7-.3-5.5-1.3-5.5-5.9 0-1.3.5-2.4 1.2-3.2-.1-.3-.5-1.5.1-3.2 0 0 1-.3 3.3 1.2a11.5 11.5 0 0 1 6 0c2.3-1.5 3.3-1.2 3.3-1.2.6 1.7.2 2.9.1 3.2.8.8 1.2 1.9 1.2 3.2 0 4.6-2.8 5.6-5.5 5.9.4.4.8 1.1.8 2.2v3.3c0 .3.2.7.8.6A12 12 0 0 0 12 .5Z"/></svg>
+              Source Code
+            </a>
+          </div>
+        </div>
+      </article>
+
+      <article class="project reveal">
+        <div class="project-thumb">
+          <span class="tag-float">AI Powered</span>
+          <span class="emoji">🎬</span>
+        </div>
+        <div class="project-body">
+          <h3>CineVerse — Movie Website with AI</h3>
+          <p>
+            A movie discovery web app with an AI-powered search and recommendation experience.
+            Browse trending titles, view details and get smart suggestions through an
+            integrated AI API — all in a fast, responsive interface.
+          </p>
+          <div class="project-tags">
+            <span>HTML5</span>
+            <span>CSS3</span>
+            <span>JavaScript</span>
+            <span>AI API</span>
+            <span>REST API</span>
+          </div>
+          <div class="project-links">
+            <a class="plink plink-live" href="https://pawangrover100.github.io/CineVerse-Movie-Website-with-Ai/" target="_blank" rel="noopener">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><path d="M15 3h6v6"/><path d="M10 14 21 3"/></svg>
+              Live Demo
+            </a>
+            <a class="plink plink-code" href="https://github.com/pawangrover100" target="_blank" rel="noopener">
+              <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 .5a12 12 0 0 0-3.8 23.4c.6.1.8-.3.8-.6v-2c-3.3.7-4-1.6-4-1.6-.6-1.4-1.4-1.8-1.4-1.8-1.1-.7.1-.7.1-.7 1.2.1 1.9 1.2 1.9 1.2 1.1 1.9 2.9 1.3 3.6 1 .1-.8.4-1.3.8-1.6-2.7-.3-5.5-1.3-5.5-5.9 0-1.3.5-2.4 1.2-3.2-.1-.3-.5-1.5.1-3.2 0 0 1-.3 3.3 1.2a11.5 11.5 0 0 1 6 0c2.3-1.5 3.3-1.2 3.3-1.2.6 1.7.2 2.9.1 3.2.8.8 1.2 1.9 1.2 3.2 0 4.6-2.8 5.6-5.5 5.9.4.4.8 1.1.8 2.2v3.3c0 .3.2.7.8.6A12 12 0 0 0 12 .5Z"/></svg>
+              Source Code
+            </a>
+          </div>
+        </div>
+      </article>
+
+      <article class="project reveal">
+        <div class="project-thumb">
+          <span class="tag-float">Open Source</span>
+          <span class="emoji">🚀</span>
+        </div>
+        <div class="project-body">
+          <h3>More Projects on GitHub</h3>
+          <p>
+            I'm continuously building — MERN full-stack apps, REST APIs and small AI-powered
+            experiments. Explore my repositories to see what I'm working on next.
+          </p>
+          <div class="project-tags">
+            <span>MERN</span>
+            <span>Node.js</span>
+            <span>Express.js</span>
+            <span>MongoDB</span>
+          </div>
+          <div class="project-links">
+            <a class="plink plink-live" href="https://github.com/pawangrover100" target="_blank" rel="noopener">
+              <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 .5a12 12 0 0 0-3.8 23.4c.6.1.8-.3.8-.6v-2c-3.3.7-4-1.6-4-1.6-.6-1.4-1.4-1.8-1.4-1.8-1.1-.7.1-.7.1-.7 1.2.1 1.9 1.2 1.9 1.2 1.1 1.9 2.9 1.3 3.6 1 .1-.8.4-1.3.8-1.6-2.7-.3-5.5-1.3-5.5-5.9 0-1.3.5-2.4 1.2-3.2-.1-.3-.5-1.5.1-3.2 0 0 1-.3 3.3 1.2a11.5 11.5 0 0 1 6 0c2.3-1.5 3.3-1.2 3.3-1.2.6 1.7.2 2.9.1 3.2.8.8 1.2 1.9 1.2 3.2 0 4.6-2.8 5.6-5.5 5.9.4.4.8 1.1.8 2.2v3.3c0 .3.2.7.8.6A12 12 0 0 0 12 .5Z"/></svg>
+              Visit GitHub
+            </a>
+          </div>
+        </div>
+      </article>
+
+    </div>
+  </div>
+</section>
+
+<!-- ================= CONTACT ================= -->
+<section id="contact">
+  <div class="container">
+    <div class="sec-head reveal">
+      <div class="sec-label">Contact</div>
+      <h2>Let's build something <span class="grad-text">together</span></h2>
+      <p>Fill the form below — your message will come straight to my inbox.</p>
+    </div>
+
+    <div class="contact-grid">
+      <div class="contact-list reveal">
+        <a class="contact-item" href="tel:+918595256390">
+          <span class="ci-icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.9v3a2 2 0 0 1-2.2 2 19.8 19.8 0 0 1-8.6-3.1 19.5 19.5 0 0 1-6-6A19.8 19.8 0 0 1 2.1 4.2 2 2 0 0 1 4.1 2h3a2 2 0 0 1 2 1.7c.1 1 .4 1.9.7 2.8a2 2 0 0 1-.5 2.1L8.1 9.9a16 16 0 0 0 6 6l1.3-1.2a2 2 0 0 1 2.1-.5c.9.3 1.8.6 2.8.7a2 2 0 0 1 1.7 2Z"/></svg>
+          </span>
+          <span><small>Phone</small><strong>+91 85952 56390</strong></span>
+        </a>
+
+        <a class="contact-item" href="mailto:pawangrover904@gmail.com">
+          <span class="ci-icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="m2 7 10 6 10-6"/></svg>
+          </span>
+          <span><small>Email</small><strong>pawangrover904@gmail.com</strong></span>
+        </a>
+
+        <div class="contact-item">
+          <span class="ci-icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 0 1 16 0Z"/><circle cx="12" cy="10" r="3"/></svg>
+          </span>
+          <span><small>Location</small><strong>H.No 174, Tatesar, Delhi – 110081</strong></span>
+        </div>
+
+        <a class="contact-item" href="https://github.com/pawangrover100" target="_blank" rel="noopener">
+          <span class="ci-icon">
+            <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 .5a12 12 0 0 0-3.8 23.4c.6.1.8-.3.8-.6v-2c-3.3.7-4-1.6-4-1.6-.6-1.4-1.4-1.8-1.4-1.8-1.1-.7.1-.7.1-.7 1.2.1 1.9 1.2 1.9 1.2 1.1 1.9 2.9 1.3 3.6 1 .1-.8.4-1.3.8-1.6-2.7-.3-5.5-1.3-5.5-5.9 0-1.3.5-2.4 1.2-3.2-.1-.3-.5-1.5.1-3.2 0 0 1-.3 3.3 1.2a11.5 11.5 0 0 1 6 0c2.3-1.5 3.3-1.2 3.3-1.2.6 1.7.2 2.9.1 3.2.8.8 1.2 1.9 1.2 3.2 0 4.6-2.8 5.6-5.5 5.9.4.4.8 1.1.8 2.2v3.3c0 .3.2.7.8.6A12 12 0 0 0 12 .5Z"/></svg>
+          </span>
+          <span><small>GitHub</small><strong>github.com/pawangrover100</strong></span>
+        </a>
+      </div>
+
+      <!-- Inline contact form (works too) -->
+      <form class="form-card reveal" data-contact novalidate>
+        <div class="field">
+          <label for="c-name">Your Name</label>
+          <input type="text" id="c-name" name="name" placeholder="Enter your name" required />
+        </div>
+        <div class="field">
+          <label for="c-email">Your Email</label>
+          <input type="email" id="c-email" name="email" placeholder="you@example.com" required />
+        </div>
+        <div class="field">
+          <label for="c-phone">Phone (optional)</label>
+          <input type="tel" id="c-phone" name="phone" placeholder="+91 98765 43210" />
+        </div>
+        <div class="field">
+          <label for="c-message">Message</label>
+          <textarea id="c-message" name="message" placeholder="Tell me about your project or opportunity..." required></textarea>
+        </div>
+        <button type="submit" class="btn btn-primary" style="width:100%">
+          Send Message
+          <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="m22 2-7 20-4-9-9-4Z"/><path d="M22 2 11 13"/></svg>
+        </button>
+        <div class="form-status" role="status" aria-live="polite"></div>
+      </form>
+    </div>
+  </div>
+</section>
+
+<!-- ================= FOOTER ================= -->
+<footer>
+  <div class="container footer-inner">
+    <p>© <span id="year"></span> Pawan Grover. Built with HTML, CSS &amp; JavaScript.</p>
+    <div class="footer-socials">
+      <a href="mailto:pawangrover904@gmail.com" aria-label="Email">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="m2 7 10 6 10-6"/></svg>
+      </a>
+      <a href="tel:+918595256390" aria-label="Phone">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.9v3a2 2 0 0 1-2.2 2 19.8 19.8 0 0 1-8.6-3.1 19.5 19.5 0 0 1-6-6A19.8 19.8 0 0 1 2.1 4.2 2 2 0 0 1 4.1 2h3a2 2 0 0 1 2 1.7c.1 1 .4 1.9.7 2.8a2 2 0 0 1-.5 2.1L8.1 9.9a16 16 0 0 0 6 6l1.3-1.2a2 2 0 0 1 2.1-.5c.9.3 1.8.6 2.8.7a2 2 0 0 1 1.7 2Z"/></svg>
+      </a>
+      <a href="https://github.com/pawangrover100" target="_blank" rel="noopener" aria-label="GitHub">
+        <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 .5a12 12 0 0 0-3.8 23.4c.6.1.8-.3.8-.6v-2c-3.3.7-4-1.6-4-1.6-.6-1.4-1.4-1.8-1.4-1.8-1.1-.7.1-.7.1-.7 1.2.1 1.9 1.2 1.9 1.2 1.1 1.9 2.9 1.3 3.6 1 .1-.8.4-1.3.8-1.6-2.7-.3-5.5-1.3-5.5-5.9 0-1.3.5-2.4 1.2-3.2-.1-.3-.5-1.5.1-3.2 0 0 1-.3 3.3 1.2a11.5 11.5 0 0 1 6 0c2.3-1.5 3.3-1.2 3.3-1.2.6 1.7.2 2.9.1 3.2.8.8 1.2 1.9 1.2 3.2 0 4.6-2.8 5.6-5.5 5.9.4.4.8 1.1.8 2.2v3.3c0 .3.2.7.8.6A12 12 0 0 0 12 .5Z"/></svg>
+      </a>
+    </div>
+  </div>
+</footer>
+
+<!-- ================= HIRE ME MODAL ================= -->
+<div class="modal-overlay" id="hireModal" role="dialog" aria-modal="true" aria-labelledby="hireTitle">
+  <div class="modal">
+    <button class="modal-close" data-close-modal aria-label="Close">×</button>
+
+    <h3 id="hireTitle">Hire Me 🚀</h3>
+    <p class="modal-sub">Fill this quick form and your message lands directly in my inbox.</p>
+
+    <form data-contact novalidate>
+      <div class="field">
+        <label for="m-name">Your Name *</label>
+        <input type="text" id="m-name" name="name" placeholder="e.g. Rahul Sharma" required />
+      </div>
+
+      <div class="modal-row">
+        <div class="field">
+          <label for="m-email">Email *</label>
+          <input type="email" id="m-email" name="email" placeholder="you@example.com" required />
+        </div>
+        <div class="field">
+          <label for="m-phone">Phone</label>
+          <input type="tel" id="m-phone" name="phone" placeholder="+91 98765 43210" />
+        </div>
+      </div>
+
+      <div class="field">
+        <label for="m-message">Message *</label>
+        <textarea id="m-message" name="message" placeholder="Tell me about the role or project..." required></textarea>
+      </div>
+
+      <button type="submit" class="btn btn-primary" style="width:100%">
+        Send Message
+        <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="m22 2-7 20-4-9-9-4Z"/><path d="M22 2 11 13"/></svg>
+      </button>
+
+      <div class="form-status" role="status" aria-live="polite"></div>
+
+      <div class="modal-divider">or</div>
+
+      <button type="button" class="btn btn-wa" style="width:100%" data-wa-direct>
+        <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M17.5 14.4c-.3-.2-1.7-.9-2-1-.3-.1-.5-.2-.7.2-.2.3-.8 1-.9 1.2-.2.2-.3.2-.6.1-.3-.2-1.3-.5-2.4-1.5-.9-.8-1.5-1.8-1.7-2.1-.2-.3 0-.5.1-.6.1-.1.3-.4.5-.6.1-.2.2-.3.3-.5.1-.2 0-.4 0-.5 0-.1-.7-1.6-.9-2.2-.2-.6-.5-.5-.7-.5h-.6c-.2 0-.5.1-.8.4-.3.3-1 1-1 2.4s1 2.8 1.2 3c.1.2 2 3 4.8 4.2.7.3 1.2.5 1.6.6.7.2 1.3.2 1.8.1.6-.1 1.7-.7 1.9-1.4.2-.7.2-1.2.2-1.4-.1-.2-.3-.2-.6-.4z"/><path d="M12 2a10 10 0 0 0-8.5 15.3L2 22l4.8-1.5A10 10 0 1 0 12 2zm0 18.2c-1.6 0-3.2-.4-4.5-1.2l-.3-.2-2.8.9.9-2.7-.2-.3A8.2 8.2 0 1 1 12 20.2z"/></svg>
+        Chat on WhatsApp Instead
+      </button>
+    </form>
+  </div>
+</div>
+
+<button id="toTop" aria-label="Back to top">
+  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"><path d="M12 19V5M5 12l7-7 7 7"/></svg>
+</button>
+
+<script src="script.js"></script>
+</body>
+</html>
